@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 100;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 5px;
+}
+
+.search-box button {
+  padding: 5px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.scholar {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.scholar h3 {
+  margin-bottom: 10px;
+}
+
+.scholar-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.left-col, .middle-col, .right-col {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.schools-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.schools-filter button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.schools-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.school {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.school:hover {
+  background-color: #f0f0f0;
+}
+
+.schools-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.colleges, .scholars {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.colleges ul, .scholars ul {
+  list-style-type: none;
+}

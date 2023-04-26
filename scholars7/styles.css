@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 导航栏 */
+header {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* 页面主体部分 */
+main {
+    margin-top: 70px;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 首页 */
+#index-search {
+    text-align: center;
+    padding: 2rem;
+}
+
+#index-results ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+#index-results ul li {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#index-results ul li:hover {
+    background-color: #e4e4e4;
+}
+
+/* 学者详情页 */
+#scholar-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.left-column,
+.center-column,
+.right-column {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.left-column ul,
+.center-column ul,
+.right-column ul {
+    margin-top: 1rem;
+}
+
+.left-column ul li,
+.center-column ul li,
+.right-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* 学校库页 */
+#school-features {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+
+#school-features .feature-list,
+#school-features .province-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#school-features .feature-list li,
+#school-features .province-list li {
+    list-style: none;
+    background-color: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+#school-features .feature-list li:hover,
+#school-features .province-list li:hover {
+    background-color: #e4e4e4;
+}
+
+#school-results ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+#school-results ul li {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#school-results ul li:hover {
+    background-color: #e4e4e4;
+}
+
+/* 学校主页 */
+#school-page {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+}
+
+.left-column ul,
+.right-column ul {
+    margin-top: 1rem;
+}
+
+.left-column ul li,
+.right-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.left-column ul li a,
+.right-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-column ul li a:hover,
+.right-column ul li a:hover {
+    color: #666;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学者信息检索网站</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/search.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="nav-home">首页</a></li>
+            <li><a href="#" id="nav-school-search">院校库</a></li>
+            <li><a href="#" id="nav-login">登录</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <div class="search-box">
+            <input type="text" placeholder="请输入学者姓名">
+            <button id="search-button">搜索</button>
+        </div>
+        <div class="search-results"></div>
+    </div>
+
+    <div id="scholar-detail" style="display: none;">
+        <div class="column">
+            <h2>个人简介</h2>
+            <ul id="scholar-info"></ul>
+        </div>
+        <div class="column">
+            <h2>论文列表</h2>
+            <ul id="scholar-papers"></ul>
+        </div>
+        <div class="column">
+            <h2>联系方式</h2>
+            <ul id="scholar-contact"></ul>
+        </div>
+    </div>
+
+    <div id="school-search" style="display: none;">
+        <div class="search-box">
+            <input type="text" placeholder="请输入学校名称">
+            <button id="school-search-button">搜索</button>
+        </div>
+        <div class="feature-search">
+            <button id="search-985">985</button>
+            <button id="search-211">211</button>
+            <button id="search-s16">双一流</button>
+        </div>
+        <div class="province-search" id="province-search"></div>
+        <div class="school-results" id="school-results"></div>
+    </div>
+
+    <div id="school-home" style="display: none;">
+        <div class="school-home-column">
+            <h2>学院</h2>
+            <ul id="school-colleges"></ul>
+        </div>
+        <div class="school-home-column">
+            <h2>学者</h2>
+            <ul id="school-scholars"></ul>
+        </div>
+    </div>
+</body>
+</html>

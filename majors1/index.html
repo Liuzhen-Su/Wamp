@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专业检索网站</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>专业检索网站</h1>
+  </header>
+  <main>
+    <section class="search-container">
+      <h2>专业检索</h2>
+      <form id="search-form">
+        <label for="degree">学位种类：</label>
+        <select name="degree" id="degree">
+          <option value="">请选择学位种类</option>
+        </select>
+
+        <label for="category">大类名称：</label>
+        <select name="category" id="category">
+          <option value="">请选择大类名称</option>
+        </select>
+
+        <label for="first-level">一级学科：</label>
+        <select name="first-level" id="first-level">
+          <option value="">请选择一级学科</option>
+        </select>
+
+        <button type="submit">搜索</button>
+      </form>
+    </section>
+    <section class="results-container">
+      <h2>搜索结果</h2>
+      <div id="results">
+        <!-- 搜索结果将显示在这里 -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 专业检索网站. All rights reserved.</p>
+  </footer>
+</body>
+</html>

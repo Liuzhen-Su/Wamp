@@ -1,0 +1,179 @@
+/* styles.css */
+
+/* 导航栏样式 */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #111;
+  }
+  
+  /* 首页样式 */
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  
+  .search-box input {
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+  
+  .search-box button {
+    padding: 0.5em;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-box button:hover {
+    background-color: #111;
+  }
+  
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .search-result {
+    padding: 1em;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin: 1em;
+    text-align: center;
+  }
+  
+  /* 学者详情页样式 */
+  #scholar-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  
+  .column {
+    width: 32%;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* 学校库搜索页样式 */
+  #school-search {
+    padding: 2em;
+  }
+  
+  .feature-search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  /* 继续 styles.css */
+
+  .feature-search button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .feature-search button:hover {
+    background-color: #111;
+  }
+  
+  .province-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+  
+  .province-search button {
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0.5em;
+  }
+  
+  .province-search button:hover {
+    background-color: #111;
+  }
+  
+  .school-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .school-result {
+    padding: 1em;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin: 1em;
+    text-align: center;
+  }
+  
+  /* 学校主页样式 */
+  #school-home {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  
+  .school-home-column {
+    width: 48%;
+  }
+  
+  .school-home-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .school-home-column ul li {
+    margin-bottom: 0.5em;
+  }
+  

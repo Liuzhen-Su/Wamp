@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.degree-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+}
+
+.degree-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.degree-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list {
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    min-height: 600px;
+    overflow-y: auto;
+}
+
+.list-item {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #0056b3;
+}
